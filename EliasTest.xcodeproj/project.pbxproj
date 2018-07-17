@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4392350B20FDBB1C0083A949 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4392350A20FDBB1C0083A949 /* GoogleMobileAds.framework */; };
 		43FDBC8B20F7B28500F0F29D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDBC8A20F7B28500F0F29D /* AppDelegate.swift */; };
 		43FDBC8D20F7B28500F0F29D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FDBC8C20F7B28500F0F29D /* ViewController.swift */; };
 		43FDBC9020F7B28500F0F29D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FDBC8E20F7B28500F0F29D /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4392350A20FDBB1C0083A949 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 		43FDBC8720F7B28500F0F29D /* EliasTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EliasTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FDBC8A20F7B28500F0F29D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43FDBC8C20F7B28500F0F29D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4392350B20FDBB1C0083A949 /* GoogleMobileAds.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +57,7 @@
 		43FDBC8920F7B28500F0F29D /* EliasTest */ = {
 			isa = PBXGroup;
 			children = (
+				4392350A20FDBB1C0083A949 /* GoogleMobileAds.framework */,
 				43FDBC8A20F7B28500F0F29D /* AppDelegate.swift */,
 				43FDBC8C20F7B28500F0F29D /* ViewController.swift */,
 				43FDBC8E20F7B28500F0F29D /* Main.storyboard */,
@@ -274,12 +278,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8938694C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EliasTest",
+				);
 				INFOPLIST_FILE = EliasTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elias.EliasTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +299,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A8938694C9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/EliasTest",
+				);
 				INFOPLIST_FILE = EliasTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.elias.EliasTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
